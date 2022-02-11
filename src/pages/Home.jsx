@@ -3,8 +3,11 @@ import { Box } from '@mui/system';
 import React from 'react';
 import SelectField from '../components/SelectField';
 import TextFieldComp from '../components/TextFieldComp';
+import useAxios from '../hooks/useAxios';
 
 const Home = () => {
+  const { response, error, loading } = useAxios({url: '/api_category.php'});
+  console.log(response)
 
   const handleSubmit = (e) => {
     e.preventDefault();
