@@ -1,10 +1,11 @@
+import { Box } from '@mui/system';
 import React from 'react';
 
 const Questions = () => {
   return (
-    <div>
+    <Box mt={3}>
       Questions
-    </div>
+    </Box>
   );
 };
 
