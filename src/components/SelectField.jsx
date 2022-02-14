@@ -30,7 +30,7 @@ const SelectField = ({ label, options }) => {
     <Box mt={3} width='100%'>
         <FormControl fullWidth size='small'>
             <InputLabel>{label}</InputLabel>
-            <Select value={value} label={label} onChange={handleChange}>
+            <Select value={value} label={label} onChange={handleChange} required>
                 {options.map(({ id, name }) => (
                   <MenuItem key={id} value={id}>{name}</MenuItem>
                 ))}

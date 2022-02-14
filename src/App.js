@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Typography } from '@mui/material';
+import { Container } from '@mui/material';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import FinalScore from './pages/FinalScore';
 import Home from './pages/Home';

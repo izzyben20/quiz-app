@@ -20,6 +20,7 @@ const TextFieldComp = () => {
               label='No of Questions'
               type='number'
               size='small'
+              required
             />
         </FormControl>
     </Box>
