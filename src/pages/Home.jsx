@@ -1,3 +1,4 @@
+import { useHistory } from 'react-router-dom';
 import { Button, CircularProgress, Typography } from '@mui/material';
 import { Box } from '@mui/system';
 import React from 'react';
@@ -7,6 +8,7 @@ import useAxios from '../hooks/useAxios';
 
 const Home = () => {
   const { response, error, loading } = useAxios({ url: '/api_category.php' });
+  const history = useHistory();
   
   if(loading) {
     return (
@@ -35,6 +37,7 @@ const Home = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    history.push('/questions')
   };
 
   return (
